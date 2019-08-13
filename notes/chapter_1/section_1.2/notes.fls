@@ -1,0 +1,25 @@
+PWD c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2
+INPUT C:\Users\Bhagat\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.tex
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.log
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.aux
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.aux
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.aux
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\source.tex
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\source.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl10.tfm
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.pdf
+INPUT C:\Users\Bhagat\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\section_1.2\notes.aux
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsl10.pfb

@@ -1,0 +1,35 @@
+PWD c:\Projects\LatexProjects\Analysis\notes\chapter_1\full
+INPUT C:\Users\Bhagat\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.tex
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.log
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.aux
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.aux
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.aux
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\source.tex
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\source.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT ..\section_1.1\source.tex
+INPUT ..\section_1.1\source.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT ..\section_1.2\source.tex
+INPUT ..\section_1.2\source.tex
+OUTPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.pdf
+INPUT C:\Users\Bhagat\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Projects\LatexProjects\Analysis\notes\chapter_1\full\notes.aux
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
