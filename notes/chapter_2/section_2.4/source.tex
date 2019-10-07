@@ -15,7 +15,7 @@
         $$s - \epsilon < a_N \leq a_n \leq s \leq s + \epsilon$$
         which implies $|a_n - s| < \epsilon$, as desired.
     \end{proof}
-    The Monotone Convergence Theorem is useful for infinite series, since it asserts convergences without any mention of the actual limit.
+    The Monotone Convergence Theorem is useful for infinite series, since it asserts convergealignnces without any mention of the actual limit.
     \textbf{Definition 2.4.3.} Let $(b_n)$ be a sequence. An \textit{infinite series} is a formal expression of the form
     \begin{equation*}
         \sum_{n=1}^\infty b_n = b_1 + b_2 + b_3 + \dots
@@ -53,12 +53,12 @@
         Thus, $s_m \leq t_k \leq M$, and the sequence $(s_m)$ is bounded. By the Monotone Convergence Theorem, we can conclude that $\sum_{n=1}^\infty b_n$ converges.
         \newline \indent
         Now, if $\sum_{n=0}^\infty 2^nb_{2^n}$ diverges. Fix $m$ and let $k$ be big enough to ensure $m \leq 2^k$. Then, 
-        \begin{equation*}
+        \begin{align*}
             s_{2^k} = b_1 + b_2 + (b_3 + b_4) + (b_5 + b_6 + b_7 + b_8) + \dots + (b_{2^{k - 1} + 1} + \dots b_{2^k}) \\
             \geq b_1 + b_2 + (b_4 + b_4) + (b_8 + b_8 + b_8 + b_8) + \dots + (b_{2^k} + b_{2^k} + \dots + b_{2^k}) \\
             = b_1 + b_2 + 2b_4 + 4b_8 + \dots + k(b_k) \\
             = b_1 + (t_k - b_1)/2 = (b_1 + t_k) / 2
-        \end{equation*}
+        \end{align*}
         So, $s_m > (b_1 + t_k) / 2$, which diverges since $t_k$ diverges so $s_m$ diverges.
     \end{proof}
     \textbf{Corollary 2.4.7} \textit{The series $\sum_{n=1}^\infty 1/n^p$ converges if and only if $p > 1$}
