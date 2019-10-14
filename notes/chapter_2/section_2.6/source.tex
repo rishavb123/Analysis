@@ -1,0 +1,59 @@
+\section{The Cauchy Criterion}
+    \textbf{Definition 2.6.1.} A sequence ($a_n$) is called a \textit{Cauchy sequence} if, for every $\epsilon > 0$, there exists an $N \in \textbf{N}$ such that whenever $m, n \geq N$ it follows that $|a_n - a_m| < \epsilon$.
+    \newline
+    \textbf{Definition 2.2.3 (Convergence of a Sequence).} A sequence $(a_n)$ \textit{converges} to a real number $a$ if, for every positive number $\epsilon$, there exists an $N \in \textbf{N}$ such that whenever $n \geq N$ it follows that $|a_n - a| < \epsilon$.
+    \newline
+    A sequence is a Cauchy sequence if, for every $\epsilon$, there is a point in the sequence after which the terms are all loser \textit{to each other} than the given $\epsilon$. 
+    \setcounter{theorem}{1}
+    \begin{theorem}
+        Every convergent sequence is a Cauchy sequence.
+    \end{theorem}
+    \begin{proof}
+        Assume ($x_n$) converges to $x$. To prove that ($x_n$) is Cauchy, we must find a point in the sequence after which we have $|x_n - x_m| < \epsilon$. 
+        $$|x_n - x_m| < \epsilon$$
+        $$|x_n - x_m| = |(x_n - x) + (x - x_m)| \leq |x_n - x| + |x_m - x|$$
+        by the triangle inequality. We can make $|x_n - x|$ and $|x_n - x|$ be less than any number by choosing a proper $N$ since it is convergent, so choose $N_1$ so that
+        $$|x_n - x| < \frac{\epsilon}{2}$$
+        and choose $N_2$ so that
+        $$|x_m - x| < \frac{\epsilon}{2}$$
+        Then, choose $N$ as $max(N_1, N_2)$ so that both these statements hold true.
+        $$|x_n - x_m| = |(x_n - x) + (x - x_m)| \leq |x_n - x| + |x_m - x| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$$
+        So,
+        $$|x_n - x_m| < \epsilon$$
+    \end{proof}
+    \textbf{Lemma 2.6.3.} \textit{Cauchy sequences are bounded.}
+    \begin{proof}
+        Given $\epsilon = 1$, there exists an $N$ such that $|x_m - x_n| < 1$ for all $m, n \geq N$. Thus, we must have $|x_n| < |x_N| + 1$ for all $n \geq N$. It follows that 
+        $$M = max{|x_1|,|x_2|,|x_3|,\dots,|x_{N-1}|,|x_N| + 1}$$
+        is a bound for the sequence $(x_n)$.
+    \end{proof}
+    \setcounter{theorem}{3}
+    \begin{theorem}[Cauchy Criterion]
+        A sequence converges if and only if it is a Cauchy sequence.
+    \end{theorem}
+    \begin{proof}
+        ($\Rightarrow$) This direction is Theorem 2.6.2
+        \newline
+        ($\Leftarrow$) For this direction, we start with a Cauchy sequence $(x_n)$. Lemme 2.6.3 guarantees that ($x_n$) is bounded, so we may use the Bolzano-Weierstrass Theorem to produce a convergent subsequence ($x_{x_k}$). Set
+        $$x = \lim x_{n_k}$$
+        Let $\epsilon > 0$. Because $(x_n)$ is Cauchy, there exists an $N$ such that
+        $$|x_n - x_m| < \frac{\epsilon}{2}$$
+        whenever $m, n \geq N$. Since $(x_{n_k}) \rightarrow x$, so choose a term in this subsequence, call it $x_{n_K}$, with $n_K \geq N$ and
+        $$|x_{n_K} - x| < \frac{\epsilon}{2}$$
+        If we $n \geq n_K$, then
+        \begin{align*}
+            |x_n - x| = |x_n - x_{n_K} + x_{n_K} - x|
+                \leq |x_n - x_{n_K}| + |x_{n_K} - x|
+                < \frac{\epsilon}{2} = \epsilon
+        \end{align*}
+        hence it is convergent.
+    \end{proof}
+    \subsection*{Completeness Revisited}
+    We used the Axiom of Completeness (AoC) to prove the Nested Interval Property (NIP) and Monotone Convergence Theorem (MCT). Then, we used NIP to prove the Bolzano-Weierstrass Theorem (BW).
+    \begin{equation*}
+        \text{AoC} \Rightarrow \begin{cases}
+            \text{NIP}  \Rightarrow \text{BW} \Rightarrow \text{CC} \\
+            \text{MCT}
+        \end{cases}
+    \end{equation*}
+    All of these depend on each other. And if you know one, you can prove the rest. So what you take as axiom and what as theorem is your preference. But they all assert the completeness of \textbf{R} in their own particular language. There are no "holes" in \textbf{R}.
