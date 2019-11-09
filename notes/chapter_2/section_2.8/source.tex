@@ -1,0 +1,28 @@
+\section{Double Summations and Products of Infinite Series}
+    Given a doubly indexed array of real numbers $\{a_{ij}: i,j \in \textbf{N}\}$, it is not clear how to define $\sum_{i,j=1}^\infty a_{ij}$ since
+    $$\sum_{j=1}^\infty\sum_{i=1}^\infty a_{ij} \neq \sum_{i=1}^\infty\sum_{j=1}^\infty a_{ij}$$
+    We can define a partial sum by adding together finite rectangles within the array (order does not matter since it is finite).
+    $$s_{mn} = \sum_{i=1}^m\sum_{j=1}^n a_{ij}$$
+    Then we can define
+    $$\sum_{i,j=1}^\infty a_{ij} = \lim_{n\rightarrow\infty} s_{nn}$$
+    \begin{theorem}
+        Let $\{a_{ij}: i,j \in \textbf{N}\}$ be a doubly indexed array of real numbers. If
+        $$\sum_{i=1}^\infty\sum_{j=1}^\infty |a_{ij}|$$
+        converges, the both $\sum_{i=1}^\infty\sum_{j=1}^\infty a_{ij}$ and $\sum_{j=1}^\infty\sum_{i=1}^\infty a_{ij}$ converge to the same value. Moreover,
+        $$\lim_{n\rightarrow\infty} s_{nn} = \sum_{i=1}^\infty\sum_{j=1}^\infty a_{ij} = \sum_{j=1}^\infty\sum_{i=1}^\infty a_{ij}$$
+        where $s_{nn} = \sum_{i=1}^n\sum_{j=1}^n a_{ij}$.
+    \end{theorem}
+    \begin{proof}
+        Define
+        $$t_{mn} = \sum_{i=1}^m\sum_{j=1}^n |a_{ij}|$$
+        TODO: Finish proof in Excercise 2.8.3
+    \end{proof}
+    \subsection*{Products of Series}
+        \begin{align*}
+            \big(\sum_{i=1}^\infty a_i \big)\big(\sum_{j=1}^\infty b_j \big) = (a_1 + a_2 + \dots)(b_1 + b_2 + \dots) \\
+            = a_1b_1 + (a_1b_2 + a_2b_1) + (a_3b_1 + a_2b_2 + a_1b_3) + \dots
+            = \sum_{k=2}^\infty d_k
+        \end{align*}
+        where
+        $$d_k = a_1b_{k-1} + a_2b_{k-2} + \dots + a_{k-1}b_1$$
+        This is called the \textit{Cauchy product}o f two series.
