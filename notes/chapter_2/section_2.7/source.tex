@@ -1,0 +1,102 @@
+\section{Properties of Infinite Series}
+    The convergence of a series $\sum_{k=1}^\infty a_k$ is defined by the terms of sequence $(s_n)$
+    \begin{equation*}
+        \sum_{k=1}^\infty a_k = A \text{ means that } \lim s_n = A
+    \end{equation*}
+    \begin{theorem}[Algebraic Limit Theorem for Series]
+        If $\sum_{k=1}^\infty a_k = A$ and $\sum_{k=1}^\infty b_k = B$, then
+        \begin{enumerate}
+            \item $\sum_{k=1}^\infty ca_k = cA$ for all $c \in \textbf{R}$ and
+            \item $\sum_{k=1}^\infty (a_k + b_k) = A + B$
+        \end{enumerate}
+    \end{theorem}
+    \begin{proof}
+        \begin{enumerate}
+            \item The sequence of partial sums for $ca_n$ must converge to $cA$ if and only if $\sum_{k=1}^\infty ca_k$, so
+            $$t_m = ca_1 + ca_2 + ca_3 + \dots + ca_m$$
+            converges to $cA$. But we are given that $\sum_{k=1}^\infty a_k$ converges to $A$, so 
+            $$s_m = a_1 + a_2 + a_3 + \dots + a_m$$
+            converges to $A$. Since $t_m = cs_m$, $(t_m) \rightarrow cA$.
+            \item TODO: Exercise 2.7.8
+        \end{enumerate}
+    \end{proof}
+    \begin{theorem}[Cauchy Criterion for Series]
+        The series $\sum_{k=1}^\infty a_k$ converges if and only if, given $\epsilon > 0$, there exists an $N \in \textbf{N}$ such that whenever $n > m \geq N$ it follows that 
+        $$|a_{m+1} + a_{m+2} + \dots + a_n| < \epsilon$$
+    \end{theorem}
+    \begin{proof}
+        Observe that
+        $$|s_n - s_m| = |a_{m+1} + a_{m+2} + \dots + a_n|$$
+        and apply the Cauchy Criterion for sequences.
+    \end{proof}
+    \begin{theorem}
+        If the series $\sum_{k=1}^\infty a_k$ converges, then $(a_k) \rightarrow 0$.
+    \end{theorem}
+    \begin{proof}
+        Consider the special case $n = m + 1$ in the Cauchy Criterion for Convergent Series.
+    \end{proof}
+    The converse of this statement is not true. Ex: Harmonic Series.
+    \begin{theorem}[Comparison Test]
+        Assume $(a_k)$ and $(b_k)$ are sequences satisfying $0 \leq a_k \leq b_k$ for all $k \in \textbf{N}$
+        \begin{enumerate}
+            \item If $\sum_{k=1}^\infty b_k$ converges, then $\sum_{k=1}^\infty a_k$ converges.
+            \item If $\sum_{k=1}^\infty a_k$ diverges, then $\sum_{k=1}^\infty b_k$ diverges.
+        \end{enumerate}
+    \end{theorem}
+    \begin{proof}
+        Both statements follow immediately from the Cauchy Criterion for Series and the observation that
+        $$|a_{m+1} + a_{m+2} + \dots + a_n| \leq |b_{m+1} + b_{m+2} + \dots + b_n|$$
+    \end{proof}
+    Just like before $a_k \leq b_k$ just has to be \textit{eventually} true.
+    \begin{theorem}[Absolute Convergence Test]
+        If the series $\sum_{k=1}^\infty |a_k|$, then $\sum_{k=1}^\infty a_k$ converges as well.
+    \end{theorem}
+    \begin{proof}
+        Since $\sum_{k=1}^\infty |a_k|$ converges, we know that, given an $\epsilon > 0$, there is an $N \in \textbf{N}$ such that
+        $$|a_{m+1}| + |a_{m+2}| + \dots + |a_n| < \epsilon$$
+        for all $n > m \geq N$. By the triangle inequality,
+        $$|a_{m+1} + a_{m+2} + \dots + a_n| \leq |a_{m+1}| + |a_{m+2}| + \dots + |a_n| < \epsilon$$ 
+        so the sufficiency of the Cauchy Criterion guarantees that $\sum_{k=1}^\infty a_k$ also converges.
+    \end{proof}
+    The converse is not always true. Consider an alternating harmonic series, which converges.
+    \begin{theorem}[Alternating Series Test]
+        Let $(a_n)$ be a sequence satisfying
+        \begin{enumerate}
+            \item $a_{n+1} > a_n$ for all $n \in \textbf{N}$ and
+            \item $(a_n) \rightarrow 0$
+        \end{enumerate}
+        Then, the alternating series $\sum_{n=1}^\infty (-1)^{n+1}a_n$ converges.
+    \end{theorem}
+    \begin{proof}
+        TODO: Exercise 2.7.1
+    \end{proof}
+    \textbf{Definition 2.7.8.} 
+    If the series $\sum_{k=1}^\infty |a_k|$, then $\sum_{k=1}^\infty a_k$ \textit{converges absolutely}. If $\sum_{k=1}^\infty a_k$ converges, but $\sum_{k=1}^\infty |a_k|$ diverges, then $\sum_{k=1}^\infty a_k$ \textit{converges conditionally}.
+    \newline
+    \subsection*{Rearrangements}
+    Rearrangements are just different orders, or you are just permuting the terms in the sum into some other order.
+    \textbf{Definition 2.7.9.} 
+    Let $\sum_{k=1}^\infty a_k$ be a series. A series $\sum_{k=1}^\infty b_k$ is called a \textit{rearrangement} of $\sum_{k=1}^\infty a_k$ if there exists a one-to-one, onto function $f$: $\textbf{N} \rightarrow \textbf{N}$ such that $b_{f(k)} = a_k$ for all $k \in \textbf{N}$.
+    \newline
+    \setcounter{theorem}{9}
+    \begin{theorem}
+        If $\sum_{k=1}^\infty a_k$ converges absolutely, then any rearrangement of this series converges to the same limit.
+    \end{theorem}
+    \begin{proof}
+        Assume $\sum_{k=1}^\infty a_k$ converges absolutely to $A$, and let $\sum_{k=1}^\infty b_k$ be a rearrangement of $\sum_{k=1}^\infty a_k$. Let's use
+        $$s_n = \sum_{k=1}^n a_k \qquad t_m = \sum_{k=1}^m b_k$$
+        We want to show $(t_m) \rightarrow A$.
+        \newline \indent
+        Let $\epsilon > 0$. By hypothesis, $(s_m) \rightarrow A$ so choose $N_1$ such that
+        $$|s_n - A| < \frac{\epsilon}{2}$$
+        for all $n \geq N_1$. Since the convergence is absolute, we can choose $N_2$ such that 
+        $$\sum_{m+1}^n |a_k| < \frac{\epsilon}{2}$$
+        for all $n > m \geq N_2$. Now, take $N = max\{N_1, N_2\}$. We know that the terms ${a_1,a_2,a_3,\dots,a_N}$ must all appear in the rearrangement so choose an $M$ so they are all apparent within the partial sum.
+        $$M = max{f(k): 1 \leq k \leq M}$$
+        Now for $m \geq M$, $(t_m - s_N)$ consists of a finite set of terms, the absolute values of which appear in the tail $\sum_{N+1}^\infty |a_k|$. Our choice of $N_2$ earlier then guarantees $|t_m - s_N| < \frac{\epsilon}{2}$, so
+        \begin{align*}
+            |t_m - A| = |t_m - s_N + s_N  - A| \\
+            \leq |t_m - s_N| + |s_N - A| \\
+            \leq \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon 
+        \end{align*}
+    \end{proof}
